@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lê Minh Đức - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Nền video -->
+  <video autoplay muted loop playsinline id="background-video">
+    <source src="bg.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+
+  <!-- Parallax + Overlay -->
+  <div class="parallax-bg" id="parallax"></div>
+  <div class="overlay"></div>
+
+  <audio id="background-music" loop>
+    <source src="ms-bg.mp3" type="audio/mpeg">
+    Trình duyệt không hỗ trợ audio.
+  </audio>
+
+  <!-- Nút bật/tắt nhạc -->
+  <div class="music-toggle" onclick="toggleMusic()">
+    <i class="fas fa-music"></i>
+  </div>
+
+  <!-- Nội dung chính -->
+  <header class="hero" data-aos="fade-down">
+    <div class="hero-content">
+      <h1>Xin chào, tôi là Đức</h1>
+      <p>Sinh viên CNTT - Trường ĐH GTVT TP.HCM</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/mint_dzzz" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/minh.uc.946753" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/LeDuc3742" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="cv-buttons" data-aos="fade-up">
+        <button>
+          <a href="cv_leminhduc.pdf" class="btn-download" download>
+            <i class="fas fa-file-pdf"></i> Tải CV PDF
+          </a>
+        </button>
+        <button onclick="window.print()" class="btn-download">
+          <i class="fas fa-print"></i> In CV
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#orientation">Orientation</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="section about-section" data-aos="fade-up">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="avatar" data-aos="zoom-in">
+          <img src="avatar.jpg" alt="Lê Minh Đức Avatar" />
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <h3>Đôi lời về bản thân</h3>
+          <p>
+            Tôi là Lê Minh Đức, là một người luôn có sự cố gắng không những trong học tập mà còn trong cuộc sống hằng ngày.
+            Bên cạnh đó, bản thân có một tinh thần trách nhiệm cao cũng như khả năng lãnh đạo tốt nên thường được mọi người xung quanh tin tưởng 
+            giao cho các chức vụ cao trong các dự án làm việc nhóm.
+            <br>
+          </p>
+          <p>
+            Tôi hiện đang là sinh viên năm 2 đang theo học ngành Công Nghệ Thông Tin tại Trường ĐH Giao thông Vận tải TP.HCM.
+            <br><br>
+          </p>
+          Đam mê <em>phát triển game</em>, thiết kế web và trải nghiệm người dùng.
+
+          <h3 style="margin-top: 40px;">Thông tin cá nhân</h3>
+          <div class="personal-info">
+            <ul>
+              <li><strong>Họ tên:</strong> Lê Minh Đức</li>
+              <li><strong>Ngày sinh:</strong> 24/10/2005</li>
+              <li><strong>Cung hoàng đạo:</strong> Thiên Yết ♏</li>
+              <li><strong>Giới tính:</strong> Nam</li>
+              <li><strong>Quê quán:</strong> An Giang</li>
+              <li><strong>Nơi ở hiện tại:</strong> TP. Hồ Chí Minh</li>
+              <li><strong>Quốc tịch:</strong> Việt Nam</li>
+              <li><strong>Học vấn:</strong> Đại học</li>
+            </ul>
+          </div>
+
+          <h3 style="margin-top: 40px;">Sở thích</h3>
+          <div class="mindmap">
+            <div class="mindmap-item">
+              <div class="title">Nghe nhạc</div>
+              <p>Learn more</p>
+              <div class="mindmap-detail music-list">
+                Tôi có sở thích chìm đắm trong các bài nhạc có giai điệu nhẹ nhàng, thư giản trong quá trình học tập cũng như giải trí. 
+                Một số bài nhạc yêu thích tiêu biểu của tôi có thể kế đển như:
+                <div class="music-card">
+                  <img src="ms1.png" alt="Song 1">
+                  <div class="info">
+                    <h4>No Time To Die</h4>
+                    <p>Billie Eilish</p>
+                    <audio controls>
+                      <source src="ms1.mp3" type="audio/mpeg">
+                    </audio>
+                  </div>
+                </div>
+                <div class="music-card">
+                  <img src="ms2.png" alt="Song 2">
+                  <div class="info">
+                    <h4>Love Me Harder</h4>
+                    <p>Ariana Grande, The Weeknd</p>
+                    <audio controls>
+                      <source src="ms2.mp3" type="audio/mpeg">
+                    </audio>
+                  </div>
+                </div>
+                <div class="music-card">
+                  <img src="ms3.png" alt="Song 3">
+                  <div class="info">
+                    <h4>Lose my Mine</h4>
+                    <p>Don Toliver, Doja Cat, F1 The Album</p>
+                    <audio controls>
+                      <source src="ms3.mp3" type="audio/mpeg">
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mindmap-item">
+              <div class="title">Chơi game</div>
+              <p>Learn more</p>
+              <div class="mindmap-detail">
+                Tôi có một niềm yêu thích với các tựa game đòi hỏi tính chiến thuật, khám phá hoặc có chiều sâu về mặt cốt truyện. 
+                Một số tựa game yêu thích của tôi thuộc thể loại này có thể kể đến như:
+                <div class="game-list">
+                  <div class="game-card">
+                    <img src="game1.png" alt="LOL">
+                    <div class="info">
+                      <h4>League of Legends</h4>
+                      <p>Một tựa game thể loại moba chiến thuật nổi tiếng được biết đến với tên Liên Minh Huyền Thoại tại Việt Nam.</p>
+                    </div>
+                  </div>
+                  <div class="game-card">
+                    <img src="game2.png" alt="Stardew Valley">
+                    <div class="info">
+                      <h4>Stardew Valley</h4>
+                      <p>Tựa game với tính chất nhẹ nhàng lấy đề tài nông trại với các hoạt động trồng trọt, chăn nuôi và các hoạt động gắn kết cộng đồng.</p>
+                    </div>
+                  </div>
+                  <div class="game-card">
+                    <img src="game3.png" alt="Valorant">
+                    <div class="info">
+                      <h4>Valorant</h4>
+                      <p>FPS chiến thuật 5v5 từ Riot Games. Cần phản xạ và chiến thuật đội nhóm.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mindmap-item">
+              Ăn uống
+              <p>Learn more</p>
+              <div class="mindmap-detail">Tôi có sở thích thưởng thức các món ăn với hương vị mới lạ, 
+                nhưng có lẽ niềm đam mê mãnh liệt nhất chính là các loại thức uống thanh mát như các loại trà trái cây kèm với các món ăn nhẹ như bánh nướng.</div>
+            </div>
+            <div class="mindmap-item">
+              Du lịch
+              <p>Learn more</p>
+              <div class="mindmap-detail">Tôi có sở thích được đi đến những nơi mới mà bản thân chưa từng ghé qua trước đây, muốn được trải nghiệm những thứ mới mẻ, chiêm ngưỡng những cảnh quan, ẩm thực, văn hóa và con người của nơi đó.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Koi Paradise Shop (29/10/2024 - 18/11/2024)</h3>
+          <p>Đây là một dự án về một trang web chuyên cung cấp, mua bán các giống cá Koi với các chức năng cơ bản thường có ở các trang thương mại điện tử.</p>
+          <p>Dự án này thuộc học phần môn Công nghệ phần mềm. Nó được viết bằng ngôn ngữ lập trình C#, do bản thân và các thanh viên trong nhóm hợp tác phát triển.</p>
+          <img src="project_koiparadiseshop.png" alt="Koi Project">
+        </div>
+        <div class="project-card">
+          <h3>Quản Lý Thư Viện (20/05/2025 - 05/06/2025)</h3>
+          <p>Một dự án nhóm xây dựng một ứng dụng cho phép quản lý một thư viện với các hoạt động cơ bản như mượn/trả sách, quản lý thông tin, 
+            số lượng sách, thông tin khách hàng,...</p>
+          <p>Dự án thuộc học phần môn Lập trình Java, được xây dựng và phát triển bằng ngôn ngữ lập trình Java.</p>
+          <img src="project_qltv.png" alt="Library Project">
+        </div>
+        <div class="project-card">
+          <h3>Web CV Cá Nhân (13/06/2025 - Hiện tại)</h3>
+          <p>Một dự án cá nhân xây dựng một trang web với các thông tin mô tả về bản thân. </p>
+          <p>Dự án thuộc học phần môn Lập trình web, được xây dựng và phát triển dựa trên những kiến thức đã được học trên lớp cũng như từ quá trình tự học tại nhà.</p>
+          <img src="project_webcanhan.png" alt="CV Project">
+        </div>
+        <div class="project-card">
+          <h3>Ứng Dụng Dự Báo Thời Tiết (Unknow)</h3>
+          <p>Trong tương lai gần, tôi sẽ thử sức bản thân bằng việc phát triển một ứng dụng di động cho phép xem được dự báo thời tiết với các chức năng thường thấy ở các 
+            ứng dụng có chủ đề tương tự kèm với giao diện thân thiện, dễ tiếp cận với mọi lứa tuổi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section" data-aos="fade-up">
+      <h2>Education</h2>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item left">
+          <div class="content">
+            <div class="date">2016 - 2020</div>
+            <p>THCS An Phú – Tham gia cuộc thi tin học cấp trường.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="content">
+            <div class="date">2020 - 2023</div>
+            <p>THPT thị trấn An Phú – Học khối xã hội, nhưng lại có niềm đam mê với công nghệ.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="content">
+            <div class="date">2023</div>
+            <p>Đại học GTVT TP.HCM – Chuyên ngành Công nghệ Thông tin.</p>
+          </div>
+        </div>
+
+        <div class="timeline-arrow-head"></div>
+      </div>
+    </section>
+
+    <section id="orientation" class="section" data-aos="fade-up">
+      <h2>Orientation</h2>
+      <p>Ở hiện thời điểm hiện tại tôi vẫn đang trong quá trình trao dồi và phát triển thêm các kỹ năng mềm của bản thân. </p>
+      <p>Trong tương lai, có lẽ tôi sẽ học thêm các loại ngôn ngữ lập trình cũng như ngôn ngữ giao tiếp mới. </p>
+      <p>Bên cạnh đó, tôi sẽ chuyển hướng sang tập trung phát triển thêm bên mảng phát triển ứng dụng di động. </p>
+      <p>Ngoài ra, tôi cũng dự định sẽ phát triển một tựa game di động đơn giản để thử sức bản thân trong lĩnh vực này cũng như tô điểm thêm cho cv xin việc sau này.</p>
+    </section>
+
+    <section id="skills" class="section" data-aos="fade-up">
+      <h2>Skills & Languages</h2>
+
+      <div class="skills-section">
+        <h3>Skills</h3>
+        <div class="skill">
+          <span>HTML & CSS</span>
+          <div class="bar">
+            <div class="level" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Image & Design Tools</span>
+          <div class="bar">
+            <div class="level" data-width="60%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>C/C++</span>
+          <div class="bar">
+            <div class="level" data-width="85%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>C#</span>
+          <div class="bar">
+            <div class="level" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Java</span>
+          <div class="bar">
+            <div class="level" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Python</span>
+          <div class="bar">
+            <div class="level" data-width="70%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Database</span>
+          <div class="bar">
+            <div class="level" data-width="65%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h3>Languages</h3>
+        <div class="skill">
+          <span>English</span>
+          <div class="bar">
+            <div class="level" data-width="85%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Vietnamese</span>
+          <div class="bar">
+            <div class="level" data-width="100%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section" data-aos="fade-up">
+      <h2>Awards</h2>
+      <div class="awards-list">
+        <div class="award-item">
+          <h4>Giải Ba cuộc thi tin học cấp trường</h4>
+          <p>Đạt giải trong kỳ thi học sinh giỏi trong một cuộc thi tin học được trường tổ chức năm lớp 8.</p>
+        </div>
+        <div class="award-item">
+          <h4>Chứng chỉ MOS</h4>
+          <p>Được cấp chứng chỉ tin học cơ bản MOS năm 2023.</p>
+        </div>
+        <div class="award-item">
+          <h4>Chứng chỉ TOEIC</h4>
+          <p>Đạt được điểm số 630 cho hai kỹ năng Listening và Writing trong kỳ thi lấy chứng chỉ tiếng anh TOEIC năm 2025.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" data-aos="fade-up">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Le Minh Duc</p>
+  </footer>
+
+  <!-- Modal phóng to ảnh -->
+  <div id="image-modal" class="image-modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modal-image" alt="Zoomed Image" />
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
+</body>
+</html>
