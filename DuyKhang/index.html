@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>LeHienTriet Profile | Responsive Websute Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Ly Duy Khang</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Xin Chào, Tôi Là <br><span>Lý Duy Khang</span></h2>
+            <h3>Sinh Viên Khoa Công Nghê Thông Tin</h3>
+            <a href="#" class="btn">About Me</a>
+            <a href="#" class="btn-download">Download CV</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+            <div class="content">
+            <div class="contentBx">
+                <h3>Tôi là Lý Duy Khang.</h3>
+                <p>Tôi 20 tuổi, năm sinh: 18/07/2005 và hiện tại tôi là sinh viên năm 2 Khoa Công Nghệ Thông Tin của trường UTH 
+                 Tôi sinh ra và lớn lên ở Cà Mau, hiện tại đang sinh sống và học tập ở Tp.Hồ Chí Minh, sở thích của tôi là nghe nhạc, xem phim và đi dạo cùng bạn bè.
+                <br><br>Thế mạnh của tôi là kiên trì giải quyết vấn đề, logic, tính toán, nhưng giao tiếp lại là điểm yếu của tôi, tôi rất ngại đám đông nhưng nếu thân thiết thì tôi vẫn hòa đồng với mọi người.
+                <br><br> Tôi quyết định chọn ngành công nghệ thông tin để theo học bởi vì tôi rất thích logic và tính toán, vì mong muốn bắt kịp với công nghệ hiện nay nên tôi chọn theo học ngành này.
+                </p>
+            </div>
+
+            <div class="w50">
+                <img src="img.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Our Services</h2>
+            <p>I'm a Front End Web Developer.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBX">
+                <img src="icon1.png">
+                <h2>Web Design</h2>
+                <p></p>
+            </div>
+            <div class="servicesBX">
+                <img src="icon2.png">
+                <h2>Web Development</h2>
+                <p></p>
+            </div>
+            <div class="servicesBX">
+                <img src="icon3.png">
+                <h2>Android App</h2>
+                <p></p>
+            </div>
+            <div class="servicesBX">
+                <img src="icon4.png">
+                <h2>Photography</h2>
+                <p></p>
+            </div>
+            <div class="servicesBX">
+                <img src="icon5.png">
+                <h2>Content Writing</h2>
+                <p></p>
+            </div>
+            <div class="servicesBX">
+                <img src="icon6.png">
+                <h2>Video Editing</h2>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+        <div class="heading">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+
+
+    <section id="skills">
+      <h2>Skills & Languages </h2> 
+
+      <div class="skills-section">
+        <h3>Skills</h3>
+        <div class="skill"><span>HTML & CSS</span><div class="bar"><div class="level" style="width: 80%"></div></div></div>
+        <div class="skill"><span>C/C++</span><div class="bar"><div class="level" style="width: 65%"></div></div></div>
+        <div class="skill"><span>Java</span><div class="bar"><div class="level" style="width: 50%"></div></div></div>
+        <div class="skill"><span>Python</span><div class="bar"><div class="level" style="width: 70%"></div></div></div>
+        <div class="skill"><span>Database</span><div class="bar"><div class="level" style="width: 65%"></div></div></div>
+      </div>
+
+      <hr />
+
+      <div class="skills-section">
+        <h3>Languages</h3>
+        <div class="skill"><span>English</span><div class="bar"><div class="level" style="width: 70%"></div></div></div>
+      </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact US</h2>
+            <p>Ly Duy Khang</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>XXX Ho Chi Minh <br>ZipCode 7000<br> Viet Nam</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+8490xxxxx</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>lyduykhangkbtb@xxx.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3> Message Me</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyrights By Ly Duy Khang - 2025</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
