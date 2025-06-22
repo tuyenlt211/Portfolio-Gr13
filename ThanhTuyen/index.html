@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Thanh Tuyền - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="background" id="webgl-canvas"></div>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#about" data-tooltip="Giới thiệu">Giới thiệu</a></li>
+            <li><a href="#career" data-tooltip="Nghề nghiệp">Nghề nghiệp</a></li>
+            <li><a href="#skills" data-tooltip="Kỹ năng">Kỹ năng</a></li>
+            <li><a href="#projects" data-tooltip="Dự án">Dự án</a></li>
+            <li><a href="#certs" data-tooltip="Chứng chỉ">Chứng chỉ</a></li>
+            <li><a href="#hobbies" data-tooltip="Sở thích">Sở thích</a></li>
+            <li><a href="#contact" data-tooltip="Liên hệ">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="banner">
+            <div class="animated-frame">
+                <div>
+                    <div class="avatar-container">
+                        <img src="avt.jpg" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="contact-info">
+                        <h2>✉️ Liên hệ</h2>
+                        <div class="contact-icons">
+                            <a href="https://www.facebook.com/thanh.tuyen.359265" target="_blank" title="Facebook" data-tooltip="Facebook: thanh.tuyen.359265">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="https://www.instagram.com/_le.tt_?igsh=YzJxaDgxbXF1NWVl&utm_source=qr" target="_blank" title="Instagram" data-tooltip="Instagram: _le.tt_">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                            <a href="https://github.com/tuyenlt211" target="_blank" title="GitHub" data-tooltip="GitHub: tuyenlt211">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </div>
+                        <p><ion-icon name="call-outline"></ion-icon> <a href="tel:0948481783">0948481783</a></p>
+                        <p><ion-icon name="mail-outline"></ion-icon> <a href="mailto:lethanhtuyenkn02@gmail.com">lethanhtuyenkn02@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-content">
+                <h1>Lê Thanh Tuyền</h1>
+                <p class="subtitle">Sinh viên Trường Đại học GTVT TP.HCM</p>
+                <p class="motto gradient-text typing-target">"Nói ít, làm nhiều - chuẩn Bọ Cạp."</p>
+                <a href="cv.pdf" download class="project-link cv-button">📥 Tải CV</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="parallax-section">
+            <h2>Giới thiệu</h2>
+            <div class="content">
+                <p class="typing-target"></p>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p>Họ và tên</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Lê Thanh Tuyền</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p>Giới tính</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Nữ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p>Ngày sinh</p>
+                            </div>
+                            <div class="card-back">
+                                <p>02/11/2005</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p>Địa chỉ</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Tân Bình, TP.HCM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <p>Cung hoàng đạo</p>
+                            </div>
+                            <div class="card-back">
+                                <p>Bọ Cạp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="career" class="parallax-section">
+            <h2>Nghề nghiệp</h2>
+            <div class="content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><ion-icon name="school-outline"></ion-icon></div>
+                        <div class="timeline-content">
+                            <h3>Sinh viên năm 2</h3>
+                            <p>Ngành Công nghệ Thông tin, Đại học GTVT TP.HCM</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
+                        <div class="timeline-content">
+                            <h3>Kinh nghiệm</h3>
+                            <p>Tham gia các dự án freelance và công việc part-time liên quan đến công nghệ</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><ion-icon name="rocket-outline"></ion-icon></div>
+                        <div class="timeline-content">
+                            <h3>Mục tiêu</h3>
+                            <p>Hoàn thiện kỹ năng lập trình Fullstack trong 1-2 năm tới, tập trung vào Web Development, Mobile App, AI, và Game Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="parallax-section">
+            <h2>Kỹ năng</h2>
+            <div class="content">
+                <h3>Kỹ năng chuyên môn</h3>
+                <ul class="skills-list">
+                    <li data-skill="HTML" data-level="70">HTML <div class="skill-bar"><div class="skill-level" style="width: 0%"></div></div></li>
+                    <li data-skill="CSS" data-level="60">CSS <div class="skill-bar"><div class="skill-level" style="width: 0%"></div></div></li>
+                    <li data-skill="JavaScript" data-level="55">JavaScript <div class="skill-bar"><div class="skill-level" style="width: 0%"></div></div></li>
+                    <li data-skill="Java" data-level="60">Java <div class="skill-bar"><div class="skill-level" style="width: 0%"></div></div></li>
+                    <li data-skill="Python" data-level="40">Python <div class="skill-bar"><div class="skill-level" style="width: 0%"></div></div></li>
+                    <li data-skill="C#" data-level="65">C# <div class="skill-bar"><div class="skill-level" style="width: 0%"></div></div></li>
+                </ul>
+                <h3>Kỹ năng mềm</h3>
+                <ul>
+                    <li>Làm việc nhóm</li>
+                    <li>Tự học</li>
+                    <li>Giao tiếp</li>
+                    <li>Giải quyết vấn đề</li>
+                </ul>
+                <h3>Ngôn ngữ</h3>
+                <ul>
+                    <li>Tiếng Việt</li>
+                    <li>Tiếng Anh (Cơ bản)</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects" class="parallax-section">
+            <h2>Dự án</h2>
+            <div class="content">
+                <div class="project">
+                    <div class="project-image-container">
+                        <img src="todolist.png" alt="To-do List" class="project-image">
+                    </div>
+                    <div class="project-details">
+                        <h3>To-do List</h3>
+                        <p>Ứng dụng quản lý công việc đơn giản với giao diện đẹp mắt, sử dụng HTML, CSS, JavaScript, ASP.NET.</p>
+                        <p><a href="https://github.com/tuyenlt211/To-do-list.git" target="_blank" class="project-link">Xem mã nguồn</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image-container">
+                        <img src="qltv.png" alt="Library Management" class="project-image">
+                    </div>
+                    <div class="project-details">
+                        <h3>Library Management</h3>
+                        <p>Hệ thống quản lý thư viện với các chức năng cơ bản, phát triển bằng Spring boot, Java, MySQL.</p>
+                        <p><a href="https://github.com/tuyenlt211/Library-management.git" target="_blank" class="project-link">Xem mã nguồn</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="certs" class="parallax-section">
+            <h2>Chứng chỉ - Giải thưởng</h2>
+            <div class="content">
+                <p>Hiện tại chưa có chứng chỉ hoặc giải thưởng.</p>
+            </div>
+        </section>
+        <section id="hobbies" class="parallax-section">
+            <h2>Sở thích</h2>
+            <div class="content">
+                <div class="hobbies-container">
+                    <div class="hobby-card" data-tooltip="Thích tốc độ và cảm giác mạnh trên đường đua!">
+                        <ion-icon name="car-sport-outline"></ion-icon>
+                        <p>Đua xe go-kart</p>
+                    </div>
+                    <div class="hobby-card" data-tooltip="Rèn luyện sức mạnh và tinh thần qua từng cú đấm!">
+                        <ion-icon name="fitness-outline"></ion-icon>
+                        <p>Boxing</p>
+                    </div>
+                    <div class="hobby-card" data-tooltip="Lưu giữ khoảnh khắc đẹp qua ống kính!">
+                        <ion-icon name="camera-outline"></ion-icon>
+                        <p>Chụp ảnh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="parallax-section">
+            <h2>📬 Gửi tin nhắn</h2>
+            <div class="content">
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Họ và tên" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Tin nhắn của bạn" required></textarea>
+                    <button type="submit" class="project-link">Gửi</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
